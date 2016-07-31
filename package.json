@@ -6,6 +6,6 @@
   "repository": "",
   "author": "Ryan Vandersmith <ryanvandersmith@gmail.com>",
   "dependencies": {
-    "get-parameter-names": "^0.3.0",
+    "get-parameter-names": "^0.3.0"
   }
 }
