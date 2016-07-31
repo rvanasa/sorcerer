@@ -1,0 +1,11 @@
+{
+  "name": "sorcerer",
+  "version": "0.1.0",
+  "description": "Sorcerer IoC Framework",
+  "main": "lib/sorcerer.js",
+  "repository": "",
+  "author": "Ryan Vandersmith <ryanvandersmith@gmail.com>",
+  "dependencies": {
+    "get-parameter-names": "^0.3.0",
+  }
+}
