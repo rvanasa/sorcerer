@@ -1,1 +1,1 @@
-module.exports = require('./sorcerer');
+module.exports = require('./lib/sorcerer');
