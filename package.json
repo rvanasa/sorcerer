@@ -7,7 +7,6 @@
   "author": "Ryan Vandersmith <ryanvandersmith@gmail.com>",
   "dependencies": {
     "get-parameter-names": "^0.3.0",
-    "glob": "^7.0.5",
-    "plasma": "rvanasa/plasma"
+    "glob": "^7.0.5"
   }
 }
