@@ -1,4 +1,4 @@
 module.exports = function(Provided, Static)
 {
-	return Provided + ':' + Static;
+	return JSON.stringify(Provided + ':' + Static);
 }
