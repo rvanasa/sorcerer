@@ -6,6 +6,7 @@
   "repository": "rvanasa/sorcerer",
   "author": "Ryan Vandersmith <ryanvandersmith@gmail.com>",
   "dependencies": {
+    "async": "^2.1.4",
     "get-parameter-names": "^0.3.0",
     "glob": "^7.0.5"
   }
