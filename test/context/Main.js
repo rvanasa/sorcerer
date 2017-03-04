@@ -1,4 +1,4 @@
-module.exports = function(Provided, Static)
+module.exports = function(Provided, Static, Config)
 {
-	return '`' + Provided + ':' + Static + '`';
+	return '`' + Provided + ':' + Static + '` : ' + Config.a;
 }

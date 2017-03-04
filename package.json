@@ -1,6 +1,6 @@
 {
   "name": "sorc",
-  "version": "0.1.3",
+  "version": "0.1.5",
   "description": "Sorcerer IoC Framework",
   "main": "index.js",
   "repository": "rvanasa/sorcerer",
