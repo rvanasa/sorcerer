@@ -38,7 +38,7 @@ module.exports = function()
 ```js
 module.exports = function(App)
 {
-	// this will run since it is referencing an active resource
+	// this will evaluate since it is referencing an active resource
 	App.name = 'Decorated App';
 }
 ```
@@ -52,13 +52,13 @@ require('sorc')(__dirname + '/src', (App) =>
 	console.log(App);
 });
 
-// or, configure a directory with arbitrary injections
+// or, configure a directory with arbitrary injections and more than one entry file
 require('sorc')(__dirname + '/src', {
 	express: require('express'),
 	Config: {whateverYouWantHere: 'nah'}
-}, (App) =>
+}, (App, Config) =>
 {
-	console.log(App);
+	console.log(App, Config);
 });
 
 // or, configure a directory with error handling
