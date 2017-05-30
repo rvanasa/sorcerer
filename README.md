@@ -11,6 +11,7 @@ Someday I'll document this properly, but for now here's a typical usage example:
   - util
     - Decorator.js
 - index.js
+- sorcerer.config.js
 ```
 
 #### /src/App.js
@@ -26,11 +27,8 @@ module.exports = function(Config)
 
 #### /src/Config.js
 ```js
-module.exports = function()
-{
-	return {
-		whateverYouWantHere: 'yeah'
-	};
+module.exports = {
+	whateverYouWantHere: 'yeah'
 }
 ```
 
@@ -43,26 +41,47 @@ module.exports = function(App)
 }
 ```
 
+#### /sorcerer.config.js
+```js
+module.exports = {
+	basePath: __dirname, // default: execution directory
+	verbose: true, // default: false
+	env: 'prod', // default: no environment filter
+	packages: [{
+		env: 'prod',
+		path: '/src',
+	}, {
+		name: 'globals', // optional
+		include: { // note that you can use both `path` and `include` in the same package
+			Example: 'Some example injection',
+		},
+	}],
+};
+```
+
 #### /index.js
 ```js
+
+// require externalized config
+var config = require('./sorcerer.config.js');
+
 // configure a directory
-require('sorc')(__dirname + '/src', (App) =>
+require('sorc')(config, (App) =>
 {
 	// You can use any file as an entry point
 	console.log(App);
 });
 
-// or, configure a directory with arbitrary injections and more than one entry file
-require('sorc')(__dirname + '/src', {
-	express: require('express'),
-	Config: {whateverYouWantHere: 'nah'}
-}, (App, Config) =>
+// or, configure a directory with a specified environment
+require('sorc')(Object.assign(config, {
+	env: 'test',
+}), (App, Config) =>
 {
 	console.log(App, Config);
 });
 
 // or, configure a directory with error handling
-require('sorc')(__dirname + '/src', (err, App) =>
+require('sorc')(config, (err, App) =>
 {
 	if(err) return console.error(err);
 	
