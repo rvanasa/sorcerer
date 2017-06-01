@@ -53,7 +53,7 @@ module.exports = {
 	}, {
 		name: 'globals', // optional
 		include: { // note that you can use both `path` and `include` in the same package
-			Example: 'Some example injection',
+			Example: () => 'Some example value',
 		},
 	}],
 };

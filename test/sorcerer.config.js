@@ -10,7 +10,7 @@ module.exports = {
 	}, {
 		name: 'globals',
 		include: {
-			Provided: 'PROVIDED',
+			Provided: () => 'PROVIDED',
 		},
 	}],
 };
