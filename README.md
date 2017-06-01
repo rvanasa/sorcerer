@@ -53,7 +53,7 @@ module.exports = {
 	}, {
 		name: 'globals', // optional
 		include: { // note that you can use both `path` and `include` in the same package
-			Example: () => 'Some example value',
+			Config: () => 'Some example resource',
 		},
 	}],
 };
@@ -63,7 +63,7 @@ module.exports = {
 ```js
 
 // require externalized config
-var config = require('./sorcerer.config.js');
+var config = require('./sorcerer.config');
 
 // configure a directory
 require('sorc')(config, (App) =>
