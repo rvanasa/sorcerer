@@ -62,7 +62,11 @@ module.exports = {
 #### /index.js
 ```js
 
-// require externalized config
+// simple example (no config object)
+require('sorc')(__dirname + '/src', 'App');
+
+
+// using externalized config
 var config = require('./sorcerer.config');
 
 // configure a directory
