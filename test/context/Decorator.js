@@ -1,4 +1,4 @@
-module.exports = function(Static)
+require('../..').decorate(function(Static)
 {
 	return 'DECORATOR:' + Static;
-}
+});
