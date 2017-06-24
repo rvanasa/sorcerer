@@ -5,9 +5,7 @@ module.exports = {
 	packages: [{
 		env: 'prod',
 		path: '/context',
-	}, {
-		path: '/lib',
-	}, {
+	}, '/lib', {
 		name: 'globals',
 		include: {
 			Provided: () => 'PROVIDED',

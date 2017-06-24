@@ -49,7 +49,7 @@ module.exports = {
 	env: 'prod', // default: no environment filter
 	packages: [{
 		env: 'prod',
-		path: '/src',
+		path: '/src', // you can also just pass the path string instead of a config object
 	}, {
 		name: 'globals', // optional
 		include: { // note that you can use both `path` and `include` in the same package
