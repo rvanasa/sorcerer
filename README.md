@@ -45,7 +45,7 @@ module.exports = function(App)
 ```js
 module.exports = {
 	basePath: __dirname, // default: execution directory
-	verbose: true, // default: false
+	verbose: true, // default: false (you can use strings/arrays to allow verbosity in specific environments)
 	packages: [{
 		env: 'production', // use specified env (process.env.NODE_ENV by default)
 		path: '/src', // you can also just pass the path string instead of a config object
