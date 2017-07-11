@@ -46,9 +46,8 @@ module.exports = function(App)
 module.exports = {
 	basePath: __dirname, // default: execution directory
 	verbose: true, // default: false
-	env: 'prod', // default: no environment filter
 	packages: [{
-		env: 'prod',
+		env: 'production', // use specified env (process.env.NODE_ENV by default)
 		path: '/src', // you can also just pass the path string instead of a config object
 	}, {
 		name: 'globals', // optional
@@ -77,9 +76,7 @@ require('sorc')(config, (App) =>
 });
 
 // or, configure a directory with a specified environment
-require('sorc')(Object.assign(config, {
-	env: 'test',
-}), (App, Config) =>
+require('sorc')(Object.assign(config, 'test', (App, Config) =>
 {
 	console.log(App, Config);
 });

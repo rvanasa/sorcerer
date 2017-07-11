@@ -1,9 +1,8 @@
 module.exports = {
 	basePath: __dirname,
 	verbose: true,
-	env: 'prod',
 	packages: ['/lib', {
-		env: 'prod',
+		env: 'production',
 		path: '/context',
 	}, {
 		path: '/patch',
