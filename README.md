@@ -76,7 +76,7 @@ require('sorc')(config, (App) =>
 });
 
 // or, configure a directory with a specified environment
-require('sorc')(Object.assign(config, 'test', (App, Config) =>
+require('sorc')(config, 'test', (App, Config) =>
 {
 	console.log(App, Config);
 });
