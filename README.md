@@ -1,7 +1,5 @@
-## A super simple Inversion of Control (IoC) framework.
-#### Similar to the Java Spring Framework, but way more straightforward.
-
-Someday I'll document this properly, but for now here's a typical usage example:
+## A super straightforward Inversion of Control (IoC) framework.
+#### Similar to the Java Spring Framework, but conducive to the NodeJS ecosystem.
 
 #### Example Project Layout
 ```
