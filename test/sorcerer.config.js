@@ -5,6 +5,9 @@ module.exports = {
 		env: 'production',
 		path: '/context',
 	}, {
+		env: 'development',
+		path: '/dev',
+	}, {
 		path: '/patch',
 		decorate: true,
 	}, {

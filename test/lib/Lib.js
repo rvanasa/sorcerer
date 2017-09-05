@@ -1,4 +1,4 @@
-require('../..').define(function()
+require('../..').define(() =>
 {
 	return 'Library resource';
 });
