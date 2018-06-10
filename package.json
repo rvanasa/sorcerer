@@ -1,14 +1,13 @@
 {
   "name": "sorc",
-  "version": "0.3.12",
+  "version": "0.3.13",
   "description": "Sorcerer IoC Framework",
   "main": "index.js",
   "repository": "rvanasa/sorcerer",
   "author": "Ryan Vandersmith <ryanvandersmith@gmail.com>",
   "dependencies": {
-    "async": "^2.1.4",
-    "colors": "^1.1.2",
+    "colors": "^1.3.0",
     "get-parameter-names": "^0.3.0",
-    "glob": "^7.0.5"
+    "glob": "^7.1.2"
   }
 }
