@@ -1,5 +1,4 @@
-## A super straightforward Inversion of Control (IoC) framework.
-#### Similar to the Java Spring Framework, but conducive to the NodeJS ecosystem.
+## A super straightforward dependency injection library for Node.js, inspired by AngularJS and the Java Spring Framework.
 
 #### Example Project Layout
 ```
